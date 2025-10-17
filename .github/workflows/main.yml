@@ -50,6 +50,6 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: cd samples/${{matrix.sample}} && haxelib run lime build android -debug
 
-      - name: Building MacOS
+      - name: Building iOS
         if: matrix.os == 'macos-latest'
         run: cd samples/${{matrix.sample}} && haxelib run lime build ios -debug
